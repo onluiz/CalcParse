@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Calc</title>
+
+        <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+        <script type="text/javascript" src="js/parse-1.4.2.min.js"></script>
+        <script type="text/javascript" src="js/calc/calc.js"></script>
+        <script type="text/javascript" src="js/calc/index.js"></script>
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/signin.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="form-signin">
+                <h2 class="form-signin-heading">Login</h2>
+                <input type="text" id="username" class="form-control" placeholder="usuário" required="" autofocus="">
+                <input type="password" id="password" class="form-control" placeholder="senha" required="">
+
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" value="remember-me"> Remember me
+                    </label>
+                </div>
+                <a href="#void" class="btn btn-lg btn-primary btn-block" onclick="UIControllerIndex.login();">Acessar o/</a>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="form-signin">
+                <h2 class="form-signin-heading">Cadastro</h2>
+                <input type="text" id="userNameSignin" class="form-control" placeholder="usuário" required="" autofocus="">
+                <input type="email" id="inputEmailSignin" class="form-control" placeholder="e-mail" required="" autofocus="">
+                <input type="password" id="inputPasswordSignin" class="form-control" placeholder="senha" required="">
+                <input type="password" id="inputPasswordRepeatSignin" class="form-control" placeholder="novamente senha" required="">
+                <a href="#void" class="btn btn-lg btn-primary btn-block" onclick="UIControllerIndex.signin();">Cadastrar o/ </a>
+            </div>
+        </div>
+    </body>
+</html>
